@@ -1,0 +1,8 @@
+# supported music files
+*.dfpwm
+*.wav
+*.aiff
+*.au
+*.flac
+# output files
+*.fr
