@@ -75,6 +75,7 @@ if pcall(require,"cc.expect") then -- running in CC
     dfpwm = require"cc.audio.dfpwm"
     on_cc=true
 else
+    _G.bit32 = require"bit32"
     expect, dfpwm = require "ccpl_code" ()
     on_cc=false
 end

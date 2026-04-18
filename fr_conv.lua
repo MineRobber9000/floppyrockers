@@ -19,6 +19,7 @@ local templates={
     ["floppy"]=125*1000
 }
 local function parseSpace(s)
+    if s==nil then return templates["drag-and-drop"] end
     if tonumber(s) then return s end
     if templates[s:lower()] then return templates[s:lower()] end
     for suffix, multiplier in pairs(suffixes) do
